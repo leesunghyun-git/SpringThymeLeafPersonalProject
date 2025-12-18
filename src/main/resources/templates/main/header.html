@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="/" id="logo">Travel TO Korea</a></h1>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li th:class="${curCat=='home'?'current':''}"><a href="/">Home</a></li>
+						<li th:class="${curCat=='seoul'?'current':''}">
+							<a href="/seoul/all">서울여행</a>
+							<ul>
+								<li><a href="/seoul/all">전체보기</a></li>
+								<li>
+									<a href="#">카테고리별 보기</a>
+									<ul>
+										<li><a href="/seoul/attraction">관광지</a></li>
+										<li><a href="/seoul/culture">문화 시설</a></li>
+										<li><a href="/seoul/festival">축제 & 공연</a></li>
+										<li><a href="/seoul/stey">숙박</a></li>
+										<li><a href="/seoul/shopping">쇼핑</a></li>
+										<li><a href="/seoul/foodshop">음식점</a></li>
+									</ul>
+								</li>
+								<li><a href="/seoul/find">검색하기</a></li>
+							</ul>
+						</li>
+						<li th:class="${curCat=='busan'?'current':''}">
+							<a href="/busan/all">부산여행</a>
+							<ul>
+								<li><a href="/busan/all">전체보기</a></li>
+								<li>
+									<a href="#">카테고리별 보기</a>
+									<ul>
+										<li><a href="/basan/attraction">관광지</a></li>
+										<li><a href="/basan/culture">문화 시설</a></li>
+										<li><a href="/basan/festival">축제 & 공연</a></li>
+										<li><a href="/basan/stey">숙박</a></li>
+										<li><a href="/basan/shopping">쇼핑</a></li>
+										<li><a href="/basan/foodshop">음식점</a></li>
+									</ul>
+								</li>
+								<li><a href="/busan/find">검색하기</a></li>
+							</ul>
+						</li>
+						<li th:class="${curCat=='gyeongju'?'current':''}">
+							<a href="/gyeongju/all">경주여행</a>
+							<ul>
+								<li><a href="/gyeongju/all">전체보기</a></li>
+								<li>
+									<a href="#">카테고리별 보기</a>
+									<ul>
+										<li><a href="/gyeongju/attraction">관광지</a></li>
+										<li><a href="/gyeongju/culture">문화 시설</a></li>
+										<li><a href="/gyeongju/festival">축제 & 공연</a></li>
+										<li><a href="/gyeongju/stey">숙박</a></li>
+										<li><a href="/gyeongju/shopping">쇼핑</a></li>
+										<li><a href="/gyeongju/foodshop">음식점</a></li>
+									</ul>
+								</li>
+								<li><a href="/gyeongju/find">검색하기</a></li>
+							</ul>
+						</li>
+						<li th:class="${curCat=='jeju'?'current':''}">
+							<a href="/jeju/all">제주여행</a>
+							<ul>
+								<li><a href="/jeju/all">전체보기</a></li>
+								<li>
+									<a href="#">카테고리별 보기</a>
+									<ul>
+										<li><a href="/jeju/attraction">관광지</a></li>
+										<li><a href="/jeju/culture">문화 시설</a></li>
+										<li><a href="/jeju/festival">축제 & 공연</a></li>
+										<li><a href="/jeju/stey">숙박</a></li>
+										<li><a href="/jeju/shopping">쇼핑</a></li>
+										<li><a href="/jeju/foodshop">음식점</a></li>
+									</ul>
+								</li>
+								<li><a href="/jeju/find">검색하기</a></li>
+							</ul>
+						</li>
+						<li th:class="${curCat=='youtube'?'current':''}"><a href="/youtube/find">유튜브</a></li>
+						<li th:class="${curCat=='music'?'current':''}">
+							<a href="#">음악</a>
+							<ul>
+								<li><a href="/music/melon">멜론차트</a></li>
+								<li><a href="/music/genie">지니차트</a></li>
+							</ul>
+						</li>
+						<li th:class="${curCat=='board'?'current':''}"><a href="/board/list">자유 게시판</a></li>
+					</ul>
+				</nav>
+</body>
+</html>
